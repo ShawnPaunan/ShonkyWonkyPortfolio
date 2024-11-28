@@ -20,5 +20,13 @@
             <button type="submit" class="btn btn-primary">Login </button>
         </div>
     </form>
+<script>
+        document.getElementById('loginForm').addEventListener('submit', function(event){
+            event.preventDefault();
+
+            localStorage.setItem('loggedIn', 'true');
+            window.location.href = 'index.html';
+        });
+    </script>
 </body>
 </html>
