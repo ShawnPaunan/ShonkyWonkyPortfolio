@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <form id="loginForm" onsubmit="handleLogin(event)">
+        <h2>Login Page</h2>
+        <div class="inputBox">
+            <input type="text" id = "username" name = "username" required> Username
+        </div>
+        <div class="inputBox">
+            <input type="password" id="password" name = "password" required> Password
+        </div>
+        <div class="inputBox">
+            <button type="submit" class="btn btn-primary">Login </button>
+        </div>
+    </form>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event){
+            event.preventDefault();
+
+            localStorage.setItem('loggedIn', 'true');
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>
