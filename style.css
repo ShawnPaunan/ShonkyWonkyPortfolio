@@ -220,4 +220,77 @@ section {
 #body .socmed{
   background-color: #39312b;
 }
+@media (max-width: 1200px) {
+  .navbar-brand {
+    transform: translateX(0);
+    right: 0;
+  }
+
+  .navbar .img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .cards {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  #hero .card {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 20px;
+  }
+
+  .navbar .img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .image, .images, .image-item {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .images img {
+    width: 100%;
+  }
+
+  .cards {
+    gap: 20px;
+  }
+
+  #hero .card {
+    padding: 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-brand {
+    font-size: 18px;
+  }
+
+  .navbar .img {
+    width: 80px;
+    height: 80px;
+  }
+
+  section h1, section h2, section h3, section h4, section h5 {
+    text-align: center;
+  }
+
+  button {
+    max-width: 100%;
+  }
+
+  .fa {
+    font-size: 20px;
+    width: 40px;
+  }
+}
 
