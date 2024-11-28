@@ -270,27 +270,82 @@ section {
   }
 }
 
-@media (max-width: 480px) {
-  .navbar-brand {
-    font-size: 18px;
-  }
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem;
+        text-align: center;
+    }
 
-  .navbar .img {
-    width: 80px;
-    height: 80px;
-  }
+    .navbar-brand {
+        font-size: 20px;
+        right: 0;
+        transform: translateX(0);
+    }
 
-  section h1, section h2, section h3, section h4, section h5 {
-    text-align: center;
-  }
+    .navbar .img {
+        width: 150px;
+        height: 150px;
+        left: 10px;
+    }
 
-  button {
-    max-width: 100%;
-  }
+    section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
 
-  .fa {
-    font-size: 20px;
-    width: 40px;
-  }
-}
+    section h1 {
+        font-size: 24px;
+    }
+
+    section h2,
+    section h3,
+    section h4,
+    section h5 {
+        font-size: 18px;
+    }
+
+    section p {
+        font-size: 14px;
+    }
+
+    #hero .column,
+    #hero .columns {
+        width: 100%;
+        float: none;
+    }
+
+    .image {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .images {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .image-item {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    #hero .card {
+        width: 90%;
+        min-width: auto;
+        padding: 5%;
+    }
+
+    .cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .fa {
+        font-size: 24px;
+        width: 40px;
+    }
+} 
+
 
