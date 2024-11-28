@@ -1,0 +1,85 @@
+
+body{
+    background-color: #39312b;
+}
+form{
+    background: #ffcf70;
+    padding: 60px 80px 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+
+}
+h2{
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: 900;
+    color:#39312b ;
+    font-family: 'Norwester', sans-serif;
+}
+.inputBox {
+    align-items: center;
+    position: relative;
+    width: 300px;
+    margin-bottom: 40px;
+    color: #39312b;
+    font-style: Helvetica;
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: 'Norwester', sans-serif;
+}
+
+.inputBox input {
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #999;
+    outline: none;
+    color: #39312b;
+    font-size: 1em;
+    letter-spacing: 0.15em;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+
+}
+
+.inputBox label {
+    position: absolute;
+    left: 0;
+    padding: 10px 0;
+    pointer-events: none;
+    color: #999;
+
+}
+
+.inputBox label span {
+    position: relative;
+    display: inline-flex;
+    letter-spacing: 0.05em;
+    transition: 0.2s ease-in-out;
+}
+
+input:focus ~ label span, input:valid ~ label span{
+    color: var(--clr);
+    letter-spacing: 0.15em;
+    transform: translateY(-25px);
+}
+
+.btn-primary {
+    background-color: #39312b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #39312b;
+}
+
